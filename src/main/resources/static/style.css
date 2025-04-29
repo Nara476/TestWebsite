@@ -1,0 +1,263 @@
+
+        /* Reset some basic elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url("utensis.jpg");
+            background-size: cover;
+            /* background-size: contain;
+            background-size: 100px 50px; */
+        }
+
+        header {
+            background: #004080;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('https://via.placeholder.com/1400x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .services {
+            padding: 60px 0;
+            background: #f4f4f4;
+        }
+
+        .service {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-icon {
+            font-size: 50px;
+            color: #004080;
+            margin-bottom: 15px;
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .service-container {
+                flex-direction: column;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+      
+          body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            opacity: 0;
+            animation: fadeInPage 1.5s ease-in forwards;
+          }
+      
+          @keyframes fadeInPage {
+            to {
+              opacity: 1;
+            }
+          }
+      
+          header {
+            background: #004080;
+            color: #fff;
+            padding: 20px 0;
+          }
+      
+          .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+          }
+      
+          nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+      
+          nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+          }
+      
+          nav a:hover {
+            color: #ffcc00;
+          }
+      
+          .banner {
+            background: url('https://via.placeholder.com/1400x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            animation: slideInBanner 1.8s ease-out;
+          }
+      
+          .banner h1 {
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            animation: fadeInText 2s ease-out;
+          }
+      
+          @keyframes slideInBanner {
+            0% {
+              opacity: 0;
+              transform: translateY(-40px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+      
+          @keyframes fadeInText {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+      
+          .services {
+            padding: 60px 0;
+            background: #f4f4f4;
+          }
+      
+          .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInText 1.5s ease-out;
+          }
+      
+          .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+          }
+      
+          .service {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInService 0.8s ease-out forwards;
+          }
+      
+          .service:nth-child(1) {
+            animation-delay: 0.2s;
+          }
+      
+          .service:nth-child(2) {
+            animation-delay: 0.4s;
+          }
+      
+          .service:nth-child(3) {
+            animation-delay: 0.6s;
+          }
+      
+          @keyframes fadeInService {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+      
+          .service-icon {
+            font-size: 50px;
+            color: #004080;
+            margin-bottom: 15px;
+          }
+      
+          footer {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeInText 2s ease-out;
+          }
+      
+          @media (max-width: 768px) {
+            .service-container {
+              flex-direction: column;
+            }
+          }
+   
